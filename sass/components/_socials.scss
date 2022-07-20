@@ -1,0 +1,47 @@
+/* Посилання на соц-мережі */
+.socials {
+    display: flex;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__item {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50px;
+    }
+
+    &__link--grey {
+        color: var(--icon-color);
+        transition: color var(--anim), background-color var(--anim);
+    }
+
+    &__link--grey:hover,
+    &__link--grey:focus {
+        color: var(--white-txt-color);
+        background-color: var(--acent-txt-color);
+    }
+
+    &__link--white {
+        color: var(--white-txt-color);
+        background-color: var(--footer-icon-bcg-color);
+
+        transition: background-color var(--anim);
+    }
+
+    &__link--white:hover,
+    &__link--white:focus {
+        background-color: var(--acent-txt-color);
+    }
+}

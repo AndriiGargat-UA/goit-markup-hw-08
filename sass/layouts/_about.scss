@@ -1,0 +1,27 @@
+/* About sections */
+.about {
+    @include section(94px);
+
+    padding-top: 0;
+
+    &__item {
+        position: relative;
+    }
+
+    &__desc {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        color: var(--white-txt-color);
+        background-color: var(--about-desc);
+    }
+}

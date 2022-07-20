@@ -1,0 +1,32 @@
+.checkbox {
+    &__custom {
+        display: inline-flex;
+        margin-right: 8px;
+        padding-top: 4px;
+        padding-left: 3px;
+        width: 16px;
+        height: 15px;
+        outline: 2px solid var(--main-txt-color);
+        outline-offset: -2px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        transition: background-color var(--anim), outline-color var(--anim);
+    }
+
+    &__icon {
+        fill: var(--icon-color-white);
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--secondary-txt-color);
+        user-select: none;
+    }
+
+    &__link {
+        text-decoration-line: underline;
+        color: var(--acent-txt-color);
+    }
+}

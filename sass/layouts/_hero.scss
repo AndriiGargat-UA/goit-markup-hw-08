@@ -1,0 +1,44 @@
+/* Hero section */
+.hero {
+    @include section (200px);
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 600px;
+
+    background-color: var(--hero-section-bcg-color);
+    background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero-bcg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        width: 696px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white-txt-color);
+    }
+
+    &__btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        transition: background-color var(--anim);
+    }
+
+    &__btn:hover,
+    &__btn:focus {
+        background-color: var(--hero-btn-hover-color);
+        cursor: pointer;
+    }
+}

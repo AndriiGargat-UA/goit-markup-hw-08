@@ -1,0 +1,13 @@
+/* Сітка flex-box */
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--indent));
+    margin-top: calc(-1 * var(--indent));
+    
+    &__item {
+        flex-basis: calc(100% / var(--items) - var(--indent));
+        margin-left: var(--indent);
+        margin-top: var(--indent);
+    }
+}

@@ -1,0 +1,4 @@
+@mixin section($indent) {
+    padding-top: $indent;
+    padding-bottom: $indent;
+}
