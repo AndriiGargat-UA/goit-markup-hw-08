@@ -1,15 +1,13 @@
 /* Header */
 .header {
-    display: none;
 
-    @media screen and (min-width: 768px) {
-        display: block;
-    }
-
+    display: flex;
     border-bottom: 1px solid var(--border-color);
 
     &__logo {
         margin-right: 88px;
+        padding-top: 16px;
+        padding-bottom: 16px;
 
         @media screen and (min-width: 1200px) {
             margin-right: 93px;
@@ -17,8 +15,10 @@
     }
 
     &__container {
-        display: flex;
-        align-items: center;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__nav {
@@ -27,8 +27,12 @@
     }
 
     &__list {
-        display: flex;
-        align-items: center;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__item:not(:last-child) {
@@ -77,9 +81,13 @@
 }
 
 .header-contact {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
 
     @media screen and (min-width: 1200px) {
         flex-direction: row;

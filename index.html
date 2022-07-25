@@ -40,6 +40,62 @@
             >Web<span class="logo__acent--black">Studio</span>
           </a>
 
+          <!-- Мобільне меню -->
+          <button class="mobile-menu-btn" type="button" data-menu-button>
+            <svg class="icon mobile-menu-icon" width="24" height="16">
+              <use class="mobile-menu-burger" href="./images/icons.svg#icon-mobile-menu"></use>
+              <use class="mobile-menu-close" href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu" data-menu>
+            <ul class="list mobile-menu__nav">
+              <li class="mobile-menu__nav-item">
+                <a
+                  class="link mobile-menu__nav-link mobile-menu__nav-link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="link mobile-menu__nav-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="link mobile-menu__nav-link" href="">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="list mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a
+                  class="link mobile-menu__contacts-link mobile-menu__contacts-link--accent"
+                  href="tel:+38 096 111 11 11"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a class="link mobile-menu__contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="list mobile-menu__socials">
+              <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="link mobile-menu__socials-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="list header__list">
             <li class="header__item">
               <a class="link header__link header__link--current" href="./index.html">Студия</a>
@@ -675,5 +731,6 @@
 
     <!-- js -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
