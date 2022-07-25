@@ -131,6 +131,9 @@ body {
   color: var(--main-txt-color);
   background-color: var(--white-bcg-color);
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 /* Reset */
 h1,
