@@ -1,9 +1,19 @@
 /* Header */
 .header {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
     border-bottom: 1px solid var(--border-color);
 
     &__logo {
-        margin-right: 93px;
+        margin-right: 88px;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
     }
 
     &__container {
@@ -68,25 +78,37 @@
 
 .header-contact {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
-    align-items: center;
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
     &__link {
         display: flex;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.1;
+        font-size: 12px;
+        line-height: 1.2;
         color: var(--secondary-txt-color);
 
         transition: color var(--anim);
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 14px;
+            line-height: 1.1;
+        }
     }
 
     &__link:hover,
@@ -95,10 +117,14 @@
     }
 
     &__icon {
-        margin-right: 10px;
+        margin-right: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+        }
     }
 
-    &__item{
+    &__item {
         letter-spacing: 0.02em;
     }
 }

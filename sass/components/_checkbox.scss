@@ -19,10 +19,15 @@
     }
 
     &__text {
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 12px;
+        line-height: 1.1;
         color: var(--secondary-txt-color);
         user-select: none;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            ine-height: 1.7;
+        }
     }
 
     &__link {

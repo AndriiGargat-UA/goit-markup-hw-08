@@ -1,9 +1,5 @@
 // filter
 .filter {
-    &__item:not(:last-child) {
-        margin-right: 8px;
-    }
-
     &__btn {
         padding: 6px 22px;
 
