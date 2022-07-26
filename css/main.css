@@ -146,7 +146,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -899,11 +899,29 @@ img {
   margin-right: auto;
   height: 400px;
   background-color: var(--hero-section-bcg-color);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero-bcg-img.jpg);
-  background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero-bcg-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero/img-1_mob.jpg);
+  background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero/img-1_mob.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero/img-1_mob@2x.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero/img-1_mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero/img-1_tab.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero/img-1_tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero/img-1_tab@2x.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero/img-1_tab@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -911,6 +929,14 @@ img {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero/img-1_desk.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero/img-1_desk.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient)), to(var(--linear-gradient))), url(../images/hero/img-1_desk@2x.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient), var(--linear-gradient)), url(../images/hero/img-1_desk@2x.jpg);
   }
 }
 .hero__title {
@@ -1434,12 +1460,18 @@ img {
     --items: 3;
   }
 }
+.portfolio__img {
+  width: 100%;
+}
 .portfolio__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
-  border-bottom: 1px solid var(--secondary-border-color);
-  border-left: 1px solid var(--secondary-border-color);
-  border-right: 1px solid var(--secondary-border-color);
   -webkit-transition: color var(--anim), background-color var(--anim), -webkit-box-shadow var(--anim);
   transition: color var(--anim), background-color var(--anim), -webkit-box-shadow var(--anim);
   transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
@@ -1454,7 +1486,13 @@ img {
   overflow: hidden;
 }
 .portfolio__text-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
+  border-bottom: 1px solid var(--secondary-border-color);
+  border-left: 1px solid var(--secondary-border-color);
+  border-right: 1px solid var(--secondary-border-color);
 }
 .portfolio__subtitle {
   margin-bottom: 4px;
