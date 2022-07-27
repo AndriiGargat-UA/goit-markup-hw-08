@@ -522,8 +522,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 40px;
-  width: calc(100% - 30px);
-  max-width: 450px;
+  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -532,6 +531,11 @@ img {
   transition: -webkit-transform var(--anim);
   transition: transform var(--anim);
   transition: transform var(--anim), -webkit-transform var(--anim);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1527,7 +1531,12 @@ img {
           transform: translateY(0);
 }
 .portfolio__desc {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: var(--white-txt-color);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__desc {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

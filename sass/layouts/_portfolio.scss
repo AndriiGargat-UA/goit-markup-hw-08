@@ -105,8 +105,12 @@
     }
 
     &__desc {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
         color: var(--white-txt-color);
+
+        @media screen and (min-width: 768px) {
+        font-size: 18px;            
+        }
     }
 }
